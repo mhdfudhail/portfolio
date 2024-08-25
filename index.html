@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ceea63888f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/name_head.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hello, I'm <br> <span>Mohammed Fudhail</span> </h1>
+                <p>Passionate Engineer</p>
+                <br>
+                
+                <!-- <a href="mailto:mhmdfudhail@gmail.com"><i class="fa-regular fa-envelope-open"></i></a>
+                <a href="https://github.com/mhdfudhail"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohammed-fudhail/"><i class="fa-brands fa-linkedin"></i></a> -->
+                <div class="social-icons">
+                    <a href="mailto:mhmdfudhail@gmail.com"><img width="48" height="48" src="https://img.icons8.com/fluency/48/email-open.png" alt="email-open"/></a>
+                    <a href="https://github.com/mhdfudhail"><img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/github-logo.png" alt="github-logo"/></a>
+                    <a href="https://www.hackster.io/fudhail"><img class="hackster-icon" width="48" height="48" src="images/hackster.png" alt="hackster"></a>
+                    <a href="https://www.linkedin.com/in/mohammed-fudhail/"><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- --------------- About section --------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a passionate tech enthusiast with a keen interest in Robotics and Embedded systems,
+                         I thrive on the excitement of exploring innovative solutions and pushing boundaries.
+                          From conceptualizing ideas to bringing them to life through hands-on experimentation,
+                           I’m dedicated to continuously expanding my knowledge and honing skills in this dynamic field.
+                            With a fervent curiosity and a drive for excellence, I’m eager to contribute to the forefront of 
+                        technological advancements and make a meaningful impact in the world of robotics and embedded systems. <br><br>
+                        This Portfolio showcase my skills and experience through a verity of projects that demonstrate my ability to design, develop and implement modern technologies.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, Embedded C, C++, HTML, CSS, JavaScript</li>
+                            <li><span>Software Tools</span><br>ROS(Robotic Operating System), OpenCV, Gazebo, Rviz, Flask</li>
+                            <!-- <li><span>Peripherals</span><br>UART, SPI, I2C, GPIO</li> -->
+                            <li><span>Hardware</span><br>Nvidia Jetson Nano, Raspberry Pi, PX4, STM32, ESP32, ESP8266, Arduino</li>
+                            <li><span>Wireless</span><br>BLE(Bluetooth Low Energy), NFC, LoRa, WiFi</li>
+                            <li><span>Source Control</span><br>Git, GitHub</li>
+                            <li><span>Others</span><br>MAVLink, STM32CubeIDE, nRF Connect SDk, Arduino IDE, Visual Studio Code</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Present</span><br>Embedded Software Engineer at Rodella Aerospace Labs</li>
+                            <li><span>2021-2022</span><br>Software development Intern at Aizon Labs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Electrical Engineering from Model Engineering College</li>
+                            <li><span>2020</span><br>Electrical Engineering from Ma'din Polytechnic College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>Nordic Semiconductors</span><br>nRF connect SDK Fundamentals</li>
+                            <li><span>NPTEL-IITK</span><br>Deep Learning </li>
+                            <li><span>NPTEL-IITB</span><br>Embedded System Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------- Services --------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>Embedded System Design</h2>
+                    <p>Developing customizable embedded system design with respect to customer requirement.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-house-signal"></i>
+                    <h2>Internet of Things</h2>
+                    <p>Developing customizable IoT applications with requirement.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Robotics</h2>
+                    <p>Developing Robotics application both simulation and hardware support.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- --------------- Portfolio --------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <!-- row-1 -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/lora.png">
+                    <div class="layer">
+                        <h3>Low-Power Live GPS Tracker</h3>
+                        <p>Live GPS tracker with geofence using STM32WLE5JC and RP2040.</p>
+                        <a href="https://www.hackster.io/fudhail/low-power-live-gps-tracker-cde61f">
+                            <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/uvDisinfection_900x620.png">
+                    <div class="layer">
+                        <h3>UV-Disinfection Robot</h3>
+                        <p>Remotely operated UV based disinfection robot for hospitals with obstacle avoidance and human detection.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/drone tracking.gif">
+                    <div class="layer">
+                        <h3>Object Tracking</h3>
+                        <p>Customizable Object tracking drone for educational purpose with DJI Tello.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- row-2 -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/quadruped_gif.gif">
+                    <div class="layer">
+                        <h3>Quadruped Robot</h3>
+                        <p>Quadruped robot with Robotic Operating System using servos.</p>
+                        <a href="https://youtu.be/hsdSkjxOi2c"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/swarm.gif">
+                    <div class="layer">
+                        <h3>Swarm Surveillance Robot</h3>
+                        <p>Surveillancing with obstacle avoidance and swarms triangulating a target enemy. </p>
+                        <a href="https://youtu.be/GSbDXquFMUs"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/urdf_imu_visualization.gif">
+                    <div class="layer">
+                        <h3>ROV: IMU Visualization</h3>
+                        <p>URDF Visualization with Pixhawk flight controller's integrated IMU using ROS and Rviz.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- row-3 -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/rov.gif">
+                    <div class="layer">
+                        <h3>ROV</h3>
+                        <p>Remotely Operated Underwater Vehicle.</p>
+                        <a href="https://youtu.be/P9QZQIL-aE0"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/arm4dof.gif">
+                    <div class="layer">
+                        <h3>Automatic EV-Battery Swapping</h3>
+                        <p>4DoF Robotic manipulator for automatic EV-Battery swapping. </p>
+                        <a href="https://youtu.be/GSbDXquFMUs"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/drone.jpg">
+                    <div class="layer">
+                        <h3>Surveillance Drone</h3>
+                        <p>Surveillance quadcopter with telemetry data.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#portfolio" class="btn"> Loading..</a>
+        </div>
+    </div>
+    <!-- --------------- Contact --------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- <p><i class="fa-solid fa-paper-plane"></i> fudhailmhd@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9207419964</p> -->
+                    <div class="social-icons">
+                        <a href="mailto:mhmdfudhail@gmail.com"><i class="fa-regular fa-envelope-open"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-whatsapp"></i></a> -->
+                        <a href="https://github.com/mhdfudhail"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammed-fudhail/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <p>Thank you for visiting. Feel free to contact through social media handles.
+                        Always interested in learning and collaborating on innovative projects.</p>
+                    <!-- <a href="" download class="btn btn2">-_-</a> -->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 fudhail</p>
+        </div>
+    </div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMYKUYkxDoH2KLNw3jX8uLFQjxY2tXHVt6VcZr1Xa24ysdrDeXUiOTlNPpHGyjESvnpA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("message")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message has been sent!";
+            setTimeout(function(){
+                msg.innerHTML = "";
+            }, 5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
