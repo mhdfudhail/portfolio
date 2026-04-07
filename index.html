@@ -1,299 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ceea63888f.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mohd. Fudhail — Robotics & Physical AI Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <!-- <img src="images/name_head.png" class="logo"> -->
-                <span class="logo">Fudhail.</span>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                
-                <h1>Hello, I'm <br> <span>Mohammed Fudhail</span> </h1>
-                <p>Passionate Engineer</p>
-                <br>
-                
-                <!-- <a href="mailto:mhmdfudhail@gmail.com"><i class="fa-regular fa-envelope-open"></i></a>
-                <a href="https://github.com/mhdfudhail"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mohammed-fudhail/"><i class="fa-brands fa-linkedin"></i></a> -->
-                <div class="social-icons">
-                    <a href="mailto:mhmdfudhail@gmail.com"><img width="48" height="48" src="https://img.icons8.com/fluency/48/email-open.png" alt="email-open"/></a>
-                    <a href="https://github.com/mhdfudhail"><img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/github-logo.png" alt="github-logo"/></a>
-                    <a href="https://www.hackster.io/fudhail"><img class="hackster-icon" width="48" height="48" src="images/hackster.png" alt="hackster"></a>
-                    <a href="https://www.linkedin.com/in/mohammed-fudhail/"><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <!-- --------------- About section --------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/profile.jpeg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>As a passionate tech enthusiast with a keen interest in Robotics and Embedded systems,
-                         I thrive on the excitement of exploring innovative solutions and pushing boundaries.
-                          From conceptualizing ideas to bringing them to life through hands-on experimentation,
-                           I’m dedicated to continuously expanding my knowledge and honing skills in this dynamic field.
-                            With a fervent curiosity and a drive for excellence, I’m eager to contribute to the forefront of 
-                        technological advancements and make a meaningful impact in the world of robotics and embedded systems. <br><br>
-                        This Portfolio showcase my skills and experience through a verity of projects that demonstrate my ability to design, develop and implement modern technologies.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('certification')">Certifications</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming Languages</span><br>Python, Embedded C, C++, HTML, CSS, JavaScript</li>
-                            <li><span>Software Tools</span><br>ROS(Robotic Operating System), OpenCV, Gazebo, Rviz, Flask</li>
-                            <!-- <li><span>Peripherals</span><br>UART, SPI, I2C, GPIO</li> -->
-                            <li><span>Hardware</span><br>Nvidia Jetson Nano, Raspberry Pi, PX4, STM32, ESP32, ESP8266, Arduino</li>
-                            <li><span>Wireless</span><br>BLE(Bluetooth Low Energy), NFC, LoRa, WiFi</li>
-                            <li><span>Source Control</span><br>Git, GitHub</li>
-                            <li><span>Others</span><br>MAVLink, STM32CubeIDE, nRF Connect SDk, Arduino IDE, Visual Studio Code</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023-Present</span><br>Embedded Software Engineer at Rodella Aerospace Labs</li>
-                            <li><span>2021-2022</span><br>Software development Intern at Aizon Labs</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2023</span><br>Electrical Engineering from Model Engineering College</li>
-                            <li><span>2020</span><br>Electrical Engineering from Ma'din Polytechnic College</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="certification">
-                        <ul>
-                            <li><span>Nordic Semiconductors</span><br>nRF connect SDK Fundamentals</li>
-                            <li><span>NPTEL-IITK</span><br>Deep Learning </li>
-                            <li><span>NPTEL-IITB</span><br>Embedded System Design</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- --------------- Services --------------- -->
-     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-rocket"></i>
-                    <h2>Embedded System Design</h2>
-                    <p>Developing embedded system firmware and design for different applications</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-house-signal"></i>
-                    <h2>Robotics</h2>
-                    <p>Developing Cutting-Edge Robotics applications for ground, air and underwater robotics.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-robot"></i>
-                    <h2>Internet of Things</h2>
-                    <p>Developing customizable IoT applications with BLE, WiFi, LoRa etc.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-     </div>
-    <!-- --------------- Portfolio --------------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <!-- row-1 -->
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/cubebot.gif">
-                    <div class="layer">
-                        <h3>Cube-Bot: ROV\AUV</h3>
-                        <p>Remotely Operated Underwater Vehicle for SAUVC'22.</p>
-                        <a href="https://www.youtube.com/watch?v=aNka-rvoDF8"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/rov.gif">
-                    <div class="layer">
-                        <h3>ROV</h3>
-                        <p>Remotely Operated Underwater Vehicle.</p>
-                        <a href="https://youtu.be/P9QZQIL-aE0"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/drone tracking.gif">
-                    <div class="layer">
-                        <h3>Object Tracking</h3>
-                        <p>Customizable Object tracking drone for educational purpose with DJI Tello.</p>
-                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!-- row-2 -->
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/quadruped_gif.gif">
-                    <div class="layer">
-                        <h3>Quadruped Robot</h3>
-                        <p>Quadruped robot with Robotic Operating System using servos.</p>
-                        <a href="https://youtu.be/hsdSkjxOi2c"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/swarm.gif">
-                    <div class="layer">
-                        <h3>Swarm Surveillance Robot</h3>
-                        <p>Surveillancing with obstacle avoidance and swarms triangulating a target enemy. </p>
-                        <a href="https://youtu.be/GSbDXquFMUs"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/arm4dof.gif">
-                    <div class="layer">
-                        <h3>Automatic EV-Battery Swapping</h3>
-                        <p>4DoF Robotic manipulator for automatic EV-Battery swapping. </p>
-                        <a href="https://youtu.be/GSbDXquFMUs"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                
-            </div>
-            <!-- row-3 -->
-            <div class="work-list">
-                <!-- Lora -->
-                <div class="work">
-                    <img src="images/lora.png">
-                    <div class="layer">
-                        <h3>Low-Power Live GPS Tracker</h3>
-                        <p>Live GPS tracker with geofence using STM32WLE5JC and RP2040.</p>
-                        <a href="https://www.hackster.io/fudhail/low-power-live-gps-tracker-cde61f">
-                            <i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/uvDisinfection_900x620.png">
-                    <div class="layer">
-                        <h3>UV-Disinfection Robot</h3>
-                        <p>Remotely operated UV based disinfection robot for hospitals with obstacle avoidance and human detection.</p>
-                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/urdf_imu_visualization.gif">
-                    <div class="layer">
-                        <h3>ROV: IMU Visualization</h3>
-                        <p>URDF Visualization with Pixhawk flight controller's integrated IMU using ROS and Rviz.</p>
-                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
 
-            <a href="#portfolio" class="btn"> Loading...</a>
-        </div>
+<nav id="site-nav">
+  <div class="nav-logo">Mohd.FUDHAIL</div>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <!-- <li><a href="#resume">Resume</a></li> -->
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow a"></div>
+  <div class="hero-glow b"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Available for Opportunities</div>
+    <h1 class="hero-name">Mohd. <em>Fudhail</em></h1>
+    <p class="hero-role">Robotics Software Engineer &nbsp;·&nbsp; Physical AI </p>
+    <p class="hero-desc">Building the bridge between intelligence and motion — designing autonomous robotic systems, ROS2 architectures, and physical AI pipelines that operate reliably in the real world.</p>
+    <div class="hero-stats-row">
+      <div class="hero-stat"><div class="hero-stat-num">2.5+</div><div class="hero-stat-label">Years Exp.</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">5+</div><div class="hero-stat-label">Deployments</div></div>
+      <!-- <div class="hero-stat"><div class="hero-stat-num">4</div><div class="hero-stat-label">Publications</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">500+</div><div class="hero-stat-label">GitHub Stars</div></div> -->
     </div>
-    <!-- --------------- Contact --------------- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <!-- <p><i class="fa-solid fa-paper-plane"></i> fudhailmhd@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +91 9207419964</p> -->
-                    <div class="social-icons">
-                        <a href="mailto:mhmdfudhail@gmail.com"><i class="fa-regular fa-envelope-open"></i></a>
-                        <!-- <a href="#"><i class="fa-brands fa-whatsapp"></i></a> -->
-                        <a href="https://github.com/mhdfudhail"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/mohammed-fudhail/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <p>Thank you for visiting. Feel free to contact through social media handles.
-                        Always interested in learning and collaborating on innovative projects.</p>
-                    <!-- <a href="" download class="btn btn2">-_-</a> -->
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="message"></span>
-                </div>
-            </div>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-slider">
+    <div class="slider-eyebrow">Achievements</div>
+    <div class="slider-frame" id="sliderFrame">
+      <div class="slider-corner"></div>
+      <div class="slider-bar" id="sliderBar"></div>
+      <div class="slide active" id="slide-0">
+        <img src="images/profile.jpeg" alt="SAUVC'22" onerror="this.src='https://placehold.co/420x530/111318/c8a96e?text=Achievement+01'"/>
+        <div class="slide-caption">
+          <div class="slide-caption-title">SAUVC'22</div>
+          <div class="slide-caption-sub">🏆&nbsp; IEEE Robotics &amp; Automation</div>
         </div>
-        <div class="copyright">
-            <p>Copyright © 2024 fudhail</p>
+      </div>
+      <div class="slide" id="slide-1">
+        <img src="images/profile.jpeg" alt="" onerror="this.src='https://placehold.co/420x530/111318/7eb8d4?text=Achievement+02'"/>
+        <div class="slide-caption">
+          <div class="slide-caption-title">SAUVC'22</div>
+          <div class="slide-caption-sub">🏆&nbsp; IEEE Robotics &amp; Automation</div>
         </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-dot active" id="dot-0" onclick="goSlide(0)" aria-label="Slide 1"></button>
+      <button class="slider-dot" id="dot-1" onclick="goSlide(1)" aria-label="Slide 2"></button>
+      <button class="slider-nav-btn" onclick="goSlide((curSlide-1+2)%2)" aria-label="Prev">&#8249;</button>
+      <button class="slider-nav-btn" onclick="goSlide((curSlide+1)%2)" aria-label="Next">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <!-- <div class="section-label">// 01 &nbsp; Capabilities</div> -->
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal"><div class="skill-icon">🤖</div><h3>ROS / ROS2</h3><p>Node design, launch files, parameter servers, lifecycle management, and real-time pub/sub pipelines across distributed robotic systems.</p><div class="skill-tags"><span class="tag">ROS2 Humble</span><span class="tag">Nav2</span><span class="tag">MoveIt2</span><span class="tag">Gazebo</span></div></div>
+    <div class="skill-card reveal"><div class="skill-icon">🧠</div><h3>Physical AI</h3><p>Perception-to-action pipelines, sim-to-real transfer, embodied agent training using reinforcement and imitation learning frameworks.</p><div class="skill-tags"><span class="tag">Isaac Lab</span><span class="tag">Diffusion Policy</span><span class="tag">ACT</span><span class="tag">RT-2</span></div></div>
+    <div class="skill-card reveal"><div class="skill-icon">🔬</div><h3>Simulation</h3><p>High-fidelity physics simulation, synthetic data generation, and domain randomization for robust real-world deployment at scale.</p><div class="skill-tags"><span class="tag">Isaac Sim</span><span class="tag">Mujoco</span><span class="tag">PyBullet</span><span class="tag">Webots</span></div></div>
+    <div class="skill-card reveal"><div class="skill-icon">📡</div><h3>Perception &amp; Sensing</h3><p>LiDAR/camera fusion, point cloud processing, semantic segmentation, and sensor calibration for autonomous navigation stacks.</p><div class="skill-tags"><span class="tag">PCL</span><span class="tag">OpenCV</span><span class="tag">SLAM</span><span class="tag">DepthAI</span></div></div>
+    <div class="skill-card reveal"><div class="skill-icon">⚙️</div><h3>Motion Planning</h3><p>Trajectory optimization, collision-aware path planning, and real-time control loops for manipulator and mobile robot platforms.</p><div class="skill-tags"><span class="tag">OMPL</span><span class="tag">TAMP</span><span class="tag">MPC</span><span class="tag">Pinocchio</span></div></div>
+    <div class="skill-card reveal"><div class="skill-icon">💻</div><h3>Systems &amp; Infra</h3><p>Real-time Linux, embedded C++, hardware abstraction layers, and CI/CD pipelines for production robotic software deployments.</p><div class="skill-tags"><span class="tag">C++17</span><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">RT Linux</span></div></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <!-- <div class="section-label">// 02 &nbsp; Career</div> -->
+  <h2 class="section-title">Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="tl-date">2024 — Present</div>
+      <div class="tl-title">Robotics Software Engineer</div>
+      <div class="tl-company">Genrobotics Innovations · Kerala, India</div>
+      <ul class="tl-bullets">
+        <li>Architected a ROS 2-based embodied AI stack for a semi-humanoid robot, integrating perception, planning, and control</li>
+        <li>Developed low-latency ros2_control interfaces for hydraulic actuators and tracked mobility</li>
+        <li>Built sim-to-real pipelines using Gazebo and Isaac Sim for reliable real-world deployment</li>
+        <li>Designed Behavior Tree–based orchestration for autonomous manipulation and navigation</li>
+      </ul>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="tl-date">2023 — 2024</div>
+      <div class="tl-title">Software Engineer</div>
+      <div class="tl-company">Rodella Technologies · MP, India</div>
+      <ul class="tl-bullets">
+        <li>Engineered custom firmware for an industrial-grade 8-thruster underwater vehicle on PX4, enabling stable multi-axis control</li>
+        <li>Led development of a platform-agnostic real-time Ground Control System (GCS) for UAVs and ROVs</li>
+        <li>Implemented autonomous capabilities including planning, object tracking, and precision landing in the GCS.</li>
+        <li>Integrated MAVLink-based communication using C++ and Python for reliable control and telemetry</li>
+      </ul>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="tl-date">2019 — 2020</div>
+      <div class="tl-title">Embedded Software Intern</div>
+      <div class="tl-company">Aizon Labs</div>
+      <ul class="tl-bullets">
+        <li>Designed secure firmware for an EV charging station, ensuring reliable and safe operation</li>
+        <li>Built embedded control logic enabling standardized communication with charging infrastructure</li>
+        <li>Developed seamless user authentication via NFC, improving accessibility and user experience</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+ 
+<section id="resume">
+  <!-- <div class="section-label">// 02.5 &nbsp; Resume</div> -->
+  <!-- <h2 class="section-title">Download My Resume</h2> -->
+  <div class="resume-wrap">
+    <div class="reveal">
+
     </div>
 
+  </div>
+</section> 
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+<!-- PROJECTS -->
+<section id="projects">
+  <!-- <div class="section-label">// 03 &nbsp; Work</div> -->
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="projects-list">
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+    <!-- <div class="project-card reveal">
+      <div class="project-inner">
+        <div class="project-media" onclick="openVideoLb('ArmFlow — Dexterous Manipulation Demo')">
+          <img class="media-img" src="https://rhinotoolhouse.com/wp-content/uploads/2022/07/manipulator-arm-rhino-tool-house.jpg" alt="Robot arm" onerror="this.src='https://placehold.co/800x500/111318/c8a96e?text=ArmFlow'"/>
+          <div class="media-overlay"></div>
+          <div class="media-badge video">&#9654; &nbsp; Demo Video</div>
+          <div class="play-overlay"><div class="play-circle">&#9654;</div></div>
+        </div>
+        
+      </div>
+    </div> -->
+    <div class="project-card reveal">
+      <div class="project-inner">
+        <div class="project-media" onclick="openVideoLb('Genbot — Semi-Humanoid Robot Demo', 0)">
+          <img class="media-img"
+            src="images/genbot_arms.webp"
+            alt="Industrial robot arm"
+            onerror="this.src='https://placehold.co/800x500/111318/c8a96e?text=ArmFlow'"/>
+          <div class="media-overlay"></div>
+          <div class="media-badge video">▶ &nbsp; Demo Video</div>
+          <div class="play-overlay"><div class="play-circle">▶</div></div>
+        </div>
+        <div class="project-content">
+          <div class="project-num">Building intelligent machines that act in the real world.”</div>
+          <h3>Genbot — Semi-Humanoid Robot</h3>
+          <p class="project-desc">15 DoF Hydraulic driven semi-humanoid robot using for real-time manipulation in unstructured environments. Operates without object-specific templates, generalising to novel shapes.</p>
+          <ul class="project-hl">
+            <li>Full-stack autonomy enabling perception-to-action execution on real hardware</li>
+            <li>Coordinated manipulation and navigation for complex, goal-driven tasks</li>
+            <li>Built for sim-to-real deployment and next-gen Physical AI systems for industrial autonomy</li>
+          </ul>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">ROS2</span>
+              <span class="tag">MoveIt2</span>
+              <span class="tag">Nav2</span>
+              <span class="tag">Isaac Sim</span>
+              <span class="tag">Gazebo</span>
+              <!-- <span class="tag">ACT</span>
+              <span class="tag">smolVLA</span> -->
+            </div>
+            <a href="#projects" class="project-link">Video &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- video  -->
+    <div class="project-card reveal">
+      <div class="project-inner">
+        <div class="project-media">
+          <div class="project-media" onclick="openVideoLb('SimBridge — Sim-to-Real Transfer Pipeline Demo', 1)">
+          <img class="media-img"
+            src="images/cubebot.gif"
+            alt="NVIDIA Isaac Sim"
+            onerror="this.src='https://placehold.co/800x500/111318/c8a96e?text=SimBridge'"/>
+          <div class="media-overlay"></div>
+          <div class="media-badge video">▶ &nbsp; Demo Video</div>
+          <div class="play-overlay"><div class="play-circle">▶</div></div>
+        </div>
+        </div>
+        <div class="project-content">
+          <div class="project-num">Let's dive deeper!</div>
+          <h3>CubeBot - Autonomous Underwater Vehicle</h3>
+          <p class="project-desc">A high-performance 8-thruster AUV engineered for the Singapore AUV competition, delivering precise control, autonomy, and reliability in challenging subsea environments</p>
+          <ul class="project-hl">
+            <li>Built an 8-thruster AUV for the Singapore Autonomous Underwater Vehicle competition, enabling precise 6-DOF control and stability</li>
+            <li>Delivered autonomous navigation and task execution for complex, competition-grade underwater missions</li>
+            <li>Developed real-time control and vision pipelines for robust operation in challenging subsea environments</li>
+          </ul>
+          <div class="project-footer">
+            <div class="skill-tags"><span class="tag">C++17</span><span class="tag">Nav2</span><span class="tag">Redis</span><span class="tag">gRPC</span></div>
+            <a href="#projects" class="project-link">Case Study &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
     
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
 
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
+    <div class="project-card reveal">
+      <div class="project-inner">
+        <div class="project-media" onclick="openVideoLb('SimBridge — Sim-to-Real Transfer Pipeline Demo', 1)">
+          <img class="media-img"
+            src="images/swarm.gif"
+            alt="swarm robot"
+            onerror="this.src='https://placehold.co/800x500/111318/c8a96e?text=SimBridge'"/>
+          <div class="media-overlay"></div>
+          <div class="media-badge video">▶ &nbsp; Demo Video</div>
+          <div class="play-overlay"><div class="play-circle">▶</div></div>
+        </div>
+        <div class="project-content">
+          <div class="project-num">Three Robots, One Mission</div>
+          <h3>Swarm Surveillance Robots</h3>
+          <p class="project-desc">Autonomous surveillance with obstacle avoidance and swarm-based target triangulation.</p>
+          <ul class="project-hl">
+            <li>Delivered precise target triangulation through multi-robot collaboration</li>
+            <li>Enabled coordinated multi-robot surveillance with real-time environment awareness</li>
+            <li>Centralized, high-speed real-time coordination across multiple robots</li>
+          </ul>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">Python3</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">ESP32</span>
+              <span class="tag">Socket</span>
+            </div>
+            <a href="#projects" class="project-link">GitHub &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- video  -->
+    <!-- <div class="project-card reveal">
+      <div class="project-inner">
+        <div class="project-media">
+          <div class="project-media" onclick="openVideoLb('SimBridge — Sim-to-Real Transfer Pipeline Demo', 1)">
+          <img class="media-img"
+            src="images/swarm.gif"
+            alt="NVIDIA Isaac Sim"
+            onerror="this.src='https://placehold.co/800x500/111318/c8a96e?text=SimBridge'"/>
+          <div class="media-overlay"></div>
+          <div class="media-badge video">▶ &nbsp; Demo Video</div>
+          <div class="play-overlay"><div class="play-circle">▶</div></div>
+        </div>
+        </div>
+        <div class="project-content">
+          <div class="project-num">// 004</div>
+          <h3>FleetMind — Multi-Robot Coordination</h3>
+          <p class="project-desc">Hybrid centralized/decentralized task allocation system for AMR fleets with real-time conflict resolution and dynamic rerouting under constantly changing warehouse conditions.</p>
+          <ul class="project-hl">
+            <li>40% reduction in AMR idle time across an 8-robot warehouse fleet</li>
+            <li>Sub-100 ms task reallocation on topology changes</li>
+            <li>99.3% uptime across 6 months of live production deployment</li>
+          </ul>
+          <div class="project-footer">
+            <div class="skill-tags"><span class="tag">C++17</span><span class="tag">Nav2</span><span class="tag">Redis</span><span class="tag">gRPC</span></div>
+            <a href="#" class="project-link">Case Study &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- images -->
+    <!-- <div class="project-card reveal">
+      <div class="project-inner">
+        <div class="project-media">
+          <img class="media-img" id="navstack-main" src="https://m.media-amazon.com/images/I/71qfuQMXGiL._AC_SL1500_.jpg" alt="LiDAR SLAM robot" onerror="this.src='https://placehold.co/800x500/111318/7eb8d4?text=NavStack'"/>
+          <div class="media-overlay"></div>
+          <div class="media-badge images">&#9632; &nbsp; 3 Images</div>
+          <div class="thumb-strip">
+            <div class="thumb active" data-proj="navstack" data-i="0"><img src="images/rov.gif" alt="" onerror="this.style.background='#181c24'"/></div>
+            <div class="thumb" data-proj="navstack" data-i="1"><img src="https://m.media-amazon.com/images/I/71yrxY4KFFL._AC_SL1500_.jpg" alt="" onerror="this.style.background='#181c24'"/></div>
+            <div class="thumb" data-proj="navstack" data-i="2"><img src="https://contents.mediadecathlon.com/p2582898/k$ce7ac14dab0c97a45fba5a22bd576e81/sq/yahboom-lidar-ros2-robot-slam-mapping-navigation-ranging-tof-ms200.jpg" alt="" onerror="this.style.background='#181c24'"/></div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-num">// 002</div>
+          <h3>NavStack Pro — Outdoor SLAM</h3>
+          <p class="project-desc">Custom SLAM pipeline fusing LiDAR, stereo vision, and GPS for robust navigation in signal-degraded environments — tunnels, forests, and GPS-occluded urban canyons.</p>
+          <ul class="project-hl">
+            <li>22% drift reduction via factor graph optimization + IMU pre-integration</li>
+            <li>Seamless indoor-outdoor and GPS-denied environment transitions</li>
+            <li>Full 3D point cloud processing at 15 Hz on embedded Jetson hardware</li>
+          </ul>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">SLAM</span>
+              <span class="tag">PCL</span>
+              <span class="tag">GTSAM</span>
+              <span class="tag">ROS2</span>
+            </div>
+            <a href="#" class="project-link">Paper &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <!-- <div class="section-label">// 04 &nbsp; Connect</div> -->
+  <h2 class="section-title">Get In Touch</h2>
+  <div class="contact-wrap">
+    <div class="reveal">
+      <p class="contact-intro">Open to robotics engineering roles, research collaborations, and consulting on autonomous systems and physical AI projects. Based in India — open to remote and hybrid.</p>
+      <div class="contact-list">
+        <div class="contact-row">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          </div>
+          <div class="contact-text"><a href="mailto:mhmdfudhail@gmail.com">mhmdfudhail@gmail.com</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="contact-text"><a href="https://www.linkedin.com/in/mohammed-fudhail/">linkedin.com/in/mohammed-fudhail/</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </div>
+          <div class="contact-text"><a href="https://github.com/mhdfudhail">github.com/mhdfudhail</a></div>
+        </div>
+        <!-- <div class="contact-row">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+          </div>
+          <div class="contact-text"><a href="#">Google Scholar — 4 Publications</a></div>
+        </div> -->
+        <div class="contact-row">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-text">India &nbsp;&middot;&nbsp; Open to Remote</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-group"><label>Name</label><input type="text" placeholder="Your name" required/></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" required/></div>
+        <div class="form-group"><label>Subject</label><input type="text" placeholder="Role / Collaboration / Consulting"/></div>
+        <div class="form-group"><label>Message</label><textarea placeholder="Tell me about your project or opportunity..."></textarea></div>
+        <div class="form-bottom">
+          <button type="submit" class="btn-primary" id="form-btn">Send Message &#8594;</button>
+          <span class="form-msg" id="form-msg">&#10003; Message sent!</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Mohd. Fudhail &nbsp;&middot;&nbsp; Robotics &amp; Physical AI Engineer &nbsp;&middot;&nbsp; India</p>
+  <ul class="footer-links">
+    <li><a href="#">Resume</a></li>
+    <li>
+      <a href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+    </li>
+    <li><a href="#">Scholar</a></li>
+  </ul>
+</footer>
+
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8593;</button>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="handleLbClick(event)">
+  <div class="lb-inner">
+    <button class="lb-close" onclick="closeLb()">&#10005; &nbsp; Close</button>
+    <div id="lb-body"></div>
+    <div class="lb-caption" id="lb-caption"></div>
+    <div class="lb-nav" id="lb-nav" style="display:none;">
+      <button onclick="lbStep(-1)">&#8592; Prev</button>
+      <button onclick="lbStep(1)">Next &#8594;</button>
+    </div>
+  </div>
+</div>
+
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMYKUYkxDoH2KLNw3jX8uLFQjxY2tXHVt6VcZr1Xa24ysdrDeXUiOTlNPpHGyjESvnpA/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("message")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message has been sent!";
-            setTimeout(function(){
-                msg.innerHTML = "";
-            }, 5000)
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+/* GALLERIES */
+var GALLERIES = {
+  navstack: [
+    'images/rov.gif',
+    'https://m.media-amazon.com/images/I/71yrxY4KFFL._AC_SL1500_.jpg',
+    'https://contents.mediadecathlon.com/p2582898/k$ce7ac14dab0c97a45fba5a22bd576e81/sq/yahboom-lidar-ros2-robot-slam-mapping-navigation-ranging-tof-ms200.jpg'
+  ],
+  fleet: [
+    'images/rov.gif',
+    'https://www.advantech.com/en/resources/case-study/~/media/C4D248BF38594DAA9C2C9A65E48AC1B5.PNG',
+    'https://www.6river.com/wp-content/uploads/2021/10/Autonomous-Mobile-Robots.jpg'
+  ]
+};
+var video_libraries = {
+  inner_html: [
+    '<div class="lb-video"><iframe width="504" height="399"frameborder="0" allowfullscreen=""src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7406566966297059328?compact=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+    '<div class="lb-video"><iframe width="504" height="399"frameborder="0" allowfullscreen=""src="https://www.youtube.com/embed/aNka-rvoDF8?si=maTWt0j3kVecvALI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+  ]
+}
+
+/* THUMBNAILS */
+document.querySelectorAll('.thumb[data-proj]').forEach(function(t) {
+  t.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var proj = t.dataset.proj, idx = parseInt(t.dataset.i);
+    document.getElementById(proj + '-main').src = GALLERIES[proj][idx];
+    t.closest('.thumb-strip').querySelectorAll('.thumb').forEach(function(x){ x.classList.remove('active'); });
+    t.classList.add('active');
+  });
+  t.addEventListener('dblclick', function(e) {
+    e.stopPropagation();
+    openImgLb(t.dataset.proj, parseInt(t.dataset.i));
+  });
+});
+['navstack','fleet'].forEach(function(p) {
+  var el = document.getElementById(p + '-main');
+  if (el) el.addEventListener('click', function(){ openImgLb(p, 0); });
+});
+
+/* LIGHTBOX */
+var lbImgs = [], lbI = 0;
+function openVideoLb(caption, id) {
+  document.getElementById('lb-body').innerHTML = video_libraries.inner_html[id];
+  document.getElementById('lb-caption').textContent = caption;
+  document.getElementById('lb-nav').style.display = 'none';
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function openImgLb(proj, idx) {
+  lbImgs = GALLERIES[proj]; lbI = idx;
+  renderLbImg();
+  document.getElementById('lb-nav').style.display = lbImgs.length > 1 ? 'flex' : 'none';
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function renderLbImg() {
+  document.getElementById('lb-body').innerHTML = '<img class="lb-img" src="' + lbImgs[lbI] + '" alt="Project image" onerror="this.src=\'https://placehold.co/900x500/111318/c8a96e?text=Image+Unavailable\'"/>';
+  document.getElementById('lb-caption').textContent = 'Image ' + (lbI+1) + ' of ' + lbImgs.length + '  \u00b7  Esc to close  \u00b7  \u2190 \u2192 to navigate';
+}
+function lbStep(dir) { lbI = (lbI + dir + lbImgs.length) % lbImgs.length; renderLbImg(); }
+function closeLb() { document.getElementById('lightbox').classList.remove('open'); document.getElementById('lb-body').innerHTML = ''; document.body.style.overflow = ''; }
+function handleLbClick(e) { if (e.target === document.getElementById('lightbox')) closeLb(); }
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('lightbox').classList.contains('open')) return;
+  if (e.key === 'Escape') closeLb();
+  if (e.key === 'ArrowLeft') lbStep(-1);
+  if (e.key === 'ArrowRight') lbStep(1);
+});
+
+/* ACHIEVEMENT SLIDER */
+var curSlide = 0, slideTimer, rafId, rafStart;
+function goSlide(idx) {
+  document.getElementById('slide-' + curSlide).classList.remove('active');
+  document.getElementById('dot-' + curSlide).classList.remove('active');
+  curSlide = idx;
+  document.getElementById('slide-' + curSlide).classList.add('active');
+  document.getElementById('dot-' + curSlide).classList.add('active');
+  startProgress();
+}
+function startProgress() {
+  clearTimeout(slideTimer); cancelAnimationFrame(rafId);
+  var bar = document.getElementById('sliderBar');
+  if (!bar) return;
+  bar.style.width = '0%'; rafStart = null;
+  function tick(ts) {
+    if (!rafStart) rafStart = ts;
+    var pct = Math.min(((ts - rafStart) / 5000) * 100, 100);
+    bar.style.width = pct + '%';
+    if (pct < 100) rafId = requestAnimationFrame(tick);
+  }
+  rafId = requestAnimationFrame(tick);
+  slideTimer = setTimeout(function(){ goSlide((curSlide + 1) % 2); }, 5000);
+}
+var sf = document.getElementById('sliderFrame');
+if (sf) {
+  sf.addEventListener('mouseenter', function(){ clearTimeout(slideTimer); cancelAnimationFrame(rafId); });
+  sf.addEventListener('mouseleave', startProgress);
+}
+startProgress();
+
+/* RESUME SKILL BARS */
+var barObs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.rp-bar-fill').forEach(function(bar) {
+        bar.style.width = bar.getAttribute('data-w') + '%';
+      });
+      barObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+var rp = document.getElementById('resume-preview');
+if (rp) barObs.observe(rp);
+
+/* SCROLL REVEAL */
+var revObs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry, i) {
+    if (entry.isIntersecting) {
+      setTimeout(function(){ entry.target.classList.add('visible'); }, i * 85);
+      revObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(function(el){ revObs.observe(el); });
+
+/* ACTIVE NAV */
+var navLinks = document.querySelectorAll('.nav-links a');
+var navObs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      navLinks.forEach(function(a){
+        a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+      });
+    }
+  });
+}, { threshold: 0.4 });
+document.querySelectorAll('section[id]').forEach(function(s){ navObs.observe(s); });
+
+/* BACK TO TOP */
+var backBtn = document.getElementById('backTop');
+window.addEventListener('scroll', function(){ backBtn.classList.toggle('visible', window.scrollY > 500); });
+
+function submitForm(e) {
+  e.preventDefault();
+  var btn = document.getElementById('form-btn');
+  var msg = document.getElementById('form-msg');
+
+  // grab values
+  var fields = e.target.querySelectorAll('input, textarea');
+  var name    = fields[0].value;
+  var email   = fields[1].value;
+  var subject = fields[2].value;
+  var message = fields[3].value;
+
+  btn.textContent = 'Sending…'; btn.style.opacity = '.6';
+
+  fetch('https://script.google.com/macros/s/AKfycbzXySULBXvxQScuhViIZbD8NOWACI5KBEF2YrAME81vDEQONY-QbYxmeGU6zL9OcOMfVA/exec', {
+    method: 'POST',
+    mode: 'no-cors',                     // required for Apps Script
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, email, subject, message })
+  })
+  .then(function() {
+    btn.textContent = 'Send Message →'; btn.style.opacity = '';
+    msg.classList.add('show');
+    e.target.reset();
+    setTimeout(function(){ msg.classList.remove('show'); }, 4000);
+  })
+  .catch(function() {
+    btn.textContent = 'Send Message →'; btn.style.opacity = '';
+    msg.textContent = '✗ Failed — try emailing directly';
+    msg.style.color = '#e07070';
+    msg.classList.add('show');
+  });
+}
+</script>
 </body>
 </html>
